@@ -8,10 +8,10 @@ TCP requires the Internet addresses and port numbers of both end points.
 
 
 HTTP - Hypertext Transfer Protocol defines communication between web browsers and web servers.
-URL - Uniform Resource Locator, is a pointer tp an information resource on the World wide web.
+URL - Uniform Resource Locator, is a pointer to an information resource on the World wide web.
 
 A PrintWriter buffers the characters that you send to it. When the array is full, then the print writer sends all characters in the array to its destination.
-The advnatage of buffering is increased performance -- it takes some time to contact the destination and send it data,
+The advanatage of buffering is increased performance -- it takes some time to contact the destination and send it data,
 and it is expensive to pay for that contact time lost. Make sure every time the data is sent, the receiver gets
 the complete data, so you need to flush the buffer manually whenever you send a command.
 
@@ -31,4 +31,4 @@ Also, instead of sockets in order to communicate with the server you can use:
 URLConnection
 HttpURLConnection
 They make it easier ( particlarly you dont have to use http command like GET anymore),
-and will allow you to obtain data from a wev server, to set request parameters, or to obtain reponse information'
+and will allow you to obtain data from a web server, to set request parameters, or to obtain reponse information'

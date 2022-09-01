@@ -23,7 +23,8 @@ public class LineNumberer
       // Read the input and write the output
       while (in.hasNextLine()) {
         String line = in.nextLine();
-        out.println("/* " + lineNumber + " */ " + line); lineNumber++;
+        out.println("/* " + lineNumber + " */ " + line);
+        lineNumber++;
       }
       in.close();
       out.close();
@@ -74,15 +75,19 @@ in.useDelimiter("") // read char by char
 // object is pointing to null.
 public void read(String filename) throws FileNotFoundException
 {
-    File inFile = new File(filename); Scanner in = new Scanner(inFile); }
-// So, if a method can throw a checked exception then put the throws clause so that the method is termintated.
+    File inFile = new File(filename);
+    Scanner in = new Scanner(inFile);
+}
 
-
-// NOTE::::!!!!!
+// So, if a method can throw a checked exception then put the throws clause so that the method is terminated.
+// Or put a try catch block for that checked exception in the method that might throw it.
+// NOTE !!!!!
 // Do not use catch and finally in the same try statement, it should be separate, like below
 /*
 try {}
 finally {}
+
+////////////////
 
 try {
   try {}
@@ -101,7 +106,6 @@ public class InsufficientFundsException extends IllegalArgumentException
       super(message);
     }
 }
-
 
 
 Note this question: Why was the out variable declared outside the try block?

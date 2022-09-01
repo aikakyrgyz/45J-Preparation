@@ -337,7 +337,7 @@ BankAccount anAccount = new CheckingAccount();
 anAccount.deposit(1000);
 
 // Here, the CheckingAccount.deposit(1000) will be called
-// it does not amtter that the object reference is stored in a variable of type BankAccount
+// it does not matter that the object reference is stored in a variable of type BankAccount
 It is called dynamic method lookup.
 
 So, the method to be called is always determined by the type of the actual object, not the type of the variable in which the reference is stored
@@ -633,7 +633,7 @@ for (i=0; i<values.length; i++)
 
 LINKED LIST
 1. Allows efficient addition and removal of elements in the middle of the sequence.
-2. Visiting all elements of a linked list in a sequential order is efifient, but random access is not.
+2. Visiting all elements of a linked list in a sequential order is efficient, but random access is not.
 3. LinkedList is a generic ClASS
 4. A list iterator describes a position anywhere inside the linked list
           LinkedList<String> mylist = ...;
@@ -684,3 +684,6 @@ objects with other threads and it could crash everything.
 --- But if the thread is sleeping, then it cannot execute code that checks for interruptions.
 --- When a sleeping thread is interrupted, an InterruptedException is generated.
 --- When threads share access to a common object, they can conflict with each other, it is called race condition.
+
+
+The in and out variables of the System class are public and static variables
